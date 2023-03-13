@@ -7,7 +7,7 @@ import { MainApp } from './layout/MainApp';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-    <MainApp/>
+      <MainApp/>
     </BrowserRouter>
   </React.StrictMode>,
 )
