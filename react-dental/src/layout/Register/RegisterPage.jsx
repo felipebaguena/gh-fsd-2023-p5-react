@@ -43,7 +43,7 @@ export const RegisterPage = () => {
     <Row className="RegisterPageRowCentral">
       <Col lg={6}>
           <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="RegisterFormName">
             <Form.Label>Nombre</Form.Label>
                 <InputText
                 type="text"
@@ -54,7 +54,7 @@ export const RegisterPage = () => {
               />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="RegisterFormSurname">
             <Form.Label>Apellidos</Form.Label>
               <InputText
               type="text"
@@ -65,7 +65,7 @@ export const RegisterPage = () => {
             />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="RegisterFormEmail">
             <Form.Label>Email</Form.Label>
               <InputText
               type="email"
@@ -76,7 +76,7 @@ export const RegisterPage = () => {
             />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="RegisterFormPassword">
             <Form.Label>Contraseña</Form.Label>
               <InputText
                 type="password"
@@ -87,7 +87,7 @@ export const RegisterPage = () => {
               />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="RegisterFormNIF">
             <Form.Label>NIF</Form.Label>
               <InputText
                 type="text"
@@ -98,7 +98,7 @@ export const RegisterPage = () => {
               />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="RegisterFormDirection">
             <Form.Label>Dirección</Form.Label>
               <InputText
                 type="text"
@@ -109,7 +109,7 @@ export const RegisterPage = () => {
               />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="RegisterFormBirth">
             <Form.Label>Fecha de nacimiento</Form.Label>
               <InputText
                 type="text"
@@ -120,7 +120,7 @@ export const RegisterPage = () => {
               />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="RegisterFormPhone">
             <Form.Label>Teléfono</Form.Label>
               <InputText
                 type="text"
