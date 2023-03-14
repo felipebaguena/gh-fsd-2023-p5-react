@@ -14,10 +14,10 @@ export const RegisterPage = () => {
     surname: "",
     email: "",
     password: "",
-    nif: "",
-    direction: "",
-    birth_date: "",
-    phone: "",
+    // nif: "",
+    // direction: "",
+    // birth_date: "",
+    // phone: "",
   });
 
   const [conditional, setConditional] = useState(false);
@@ -39,19 +39,20 @@ export const RegisterPage = () => {
 
 
   return (
-    <Container>
+  <Container>
     <Row className="RegisterPageRowCentral">
       <Col lg={6}>
-          <Form>
+        <Form>
+
           <Form.Group className="mb-3" controlId="RegisterFormName">
             <Form.Label>Nombre</Form.Label>
-                <InputText
-                type="text"
-                name="name"
-                placeholder="Introduce tu nombre"
-                changeFunction={(e) => inputHandler(e)}
-                validateFunction={(e) => inputValidate(e)}
-              />
+              <InputText
+              type="text"
+              name="name"
+              placeholder="Introduce tu nombre"
+              changeFunction={(e) => inputHandler(e)}
+              validateFunction={(e) => inputValidate(e)}
+            />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="RegisterFormSurname">
@@ -87,7 +88,7 @@ export const RegisterPage = () => {
               />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="RegisterFormNIF">
+          {/* <Form.Group className="mb-3" controlId="RegisterFormNIF">
             <Form.Label>NIF</Form.Label>
               <InputText
                 type="text"
@@ -129,7 +130,7 @@ export const RegisterPage = () => {
                 changeFunction={(e) => inputHandler(e)}
                 validateFunction={(e) => inputValidate(e)}
               />
-          </Form.Group>
+          </Form.Group> */}
 
           <Button variant="info" type="submit">
             Confirmar
