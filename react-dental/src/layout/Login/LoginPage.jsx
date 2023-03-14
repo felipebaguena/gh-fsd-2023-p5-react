@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -24,6 +24,11 @@ export const LoginPage = () => {
       [e.target.name]: e.target.value,
     }));
   };
+
+  useEffect(()=>{
+    //Este useEffect se va a ejecutar SIEMPRE que hayan cambios en el hook credenciales
+    console.log("Credenciales ahora vale......", credenciales);
+}, [credenciales]);
 
   const inputValidate = (e) => {
     switch (e.target.name) {
