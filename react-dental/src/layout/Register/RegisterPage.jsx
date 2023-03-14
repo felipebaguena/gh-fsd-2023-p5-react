@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { InputText } from "../../components/InputText/InputText";
 
 export const RegisterPage = () => {
 
@@ -44,90 +45,90 @@ export const RegisterPage = () => {
           <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Nombre</Form.Label>
-            <Form.Control
-              type="text"
-              name="name"
-              placeholder="Introduce tu nombre"
-              onChange={inputHandler}
-              onBlur={inputValidate}
-            />
+                <InputText
+                type="text"
+                name="name"
+                placeholder="Introduce tu nombre"
+                changeFunction={(e) => inputHandler(e)}
+                validateFunction={(e) => inputValidate(e)}
+              />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Apellidos</Form.Label>
-            <Form.Control
+              <InputText
               type="text"
               name="surname"
               placeholder="Introduce tus apellidos"
-              onChange={inputHandler}
-              onBlur={inputValidate}
+              changeFunction={(e) => inputHandler(e)}
+              validateFunction={(e) => inputValidate(e)}
             />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email</Form.Label>
-            <Form.Control
-              type="text"
+              <InputText
+              type="email"
               name="email"
-              placeholder="Introduce un correo electrónico"
-              onChange={inputHandler}
-              onBlur={inputValidate}
+              placeholder="Introduce tu email"
+              changeFunction={(e) => inputHandler(e)}
+              validateFunction={(e) => inputValidate(e)}
             />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Contraseña</Form.Label>
-            <Form.Control
-              type="text"
-              name="password"
-              placeholder="Selecciona una contraseña"
-              onChange={inputHandler}
-              onBlur={inputValidate}
-            />
+              <InputText
+                type="password"
+                name="password"
+                placeholder="Elige una contraseña"
+                changeFunction={(e) => inputHandler(e)}
+                validateFunction={(e) => inputValidate(e)}
+              />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>NIF</Form.Label>
-            <Form.Control
-              type="text"
-              name="nif"
-              placeholder="Introduce tu documento de identidad"
-              onChange={inputHandler}
-              onBlur={inputValidate}
-            />
+              <InputText
+                type="text"
+                name="nif"
+                placeholder="Introduce tu documento de identidad"
+                changeFunction={(e) => inputHandler(e)}
+                validateFunction={(e) => inputValidate(e)}
+              />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Dirección</Form.Label>
-            <Form.Control
-              type="text"
-              name="direction"
-              placeholder="Introduce tu domicilio"
-              onChange={inputHandler}
-              onBlur={inputValidate}
-            />
+              <InputText
+                type="text"
+                name="direction"
+                placeholder="Introduce tu domicilio"
+                changeFunction={(e) => inputHandler(e)}
+                validateFunction={(e) => inputValidate(e)}
+              />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Fecha de nacimiento</Form.Label>
-            <Form.Control
-              type="text"
-              name="birth_date"
-              placeholder="Introduce tu fecha de nacimiento"
-              onChange={inputHandler}
-              onBlur={inputValidate}
-            />
+              <InputText
+                type="text"
+                name="birth_date"
+                placeholder="Introduce tu fecha de nacimiento"
+                changeFunction={(e) => inputHandler(e)}
+                validateFunction={(e) => inputValidate(e)}
+              />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Teléfono</Form.Label>
-            <Form.Control
-              type="text"
-              name="phone"
-              placeholder="Introduce tu número de teléfono"
-              onChange={inputHandler}
-              onBlur={inputValidate}
-            />
+              <InputText
+                type="text"
+                name="phone"
+                placeholder="Introduce tu teléfono"
+                changeFunction={(e) => inputHandler(e)}
+                validateFunction={(e) => inputValidate(e)}
+              />
           </Form.Group>
 
           <Button variant="info" type="submit">
