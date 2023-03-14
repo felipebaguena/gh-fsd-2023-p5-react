@@ -1,7 +1,8 @@
-.LoginPageBoxTop {
-    height: 30vh;
-}
 
-.LoginPageBoxBottom {
-    height: 30vh;
+.LoginPageRowCentral {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

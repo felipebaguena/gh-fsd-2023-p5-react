@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 export const NavTop = () => {
   return (
     <Navbar bg="info" 
+    fixed="top"
     expand="lg"
     variant="dark">
       <Container fluid>
