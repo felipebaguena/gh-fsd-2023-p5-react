@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import './LoginPage.css'
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { InputText } from "../../components/InputText/InputText";
 
 export const LoginPage = () => {
 
@@ -72,14 +73,13 @@ export const LoginPage = () => {
             <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Introduce tu correo electrónico"
-                name="email"
-                value={credenciales.email}
-                onChange={inputHandler}
-                onBlur={inputValidate}
-              />
+              <InputText
+            type="email"
+            name="email"
+            placeholder="escribe un email"
+            changeFunction={(e) => inputHandler(e)}
+            validateFunction={(e) => inputValidate(e)}
+          />
               <Form.Text className="text-danger">
                 {credencialesError.emailError}
               </Form.Text>
@@ -87,14 +87,13 @@ export const LoginPage = () => {
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Contraseña</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Introduce tu contraseña"
-                name="password"
-                value={credenciales.password}
-                onChange={inputHandler}
-                onBlur={inputValidate}
-              />
+              <InputText
+            type="password"
+            name="password"
+            placeholder="escribe un password"
+            changeFunction={(e) => inputHandler(e)}
+            validateFunction={(e) => inputValidate(e)}
+          />
               <Form.Text className="text-danger">
                 {credencialesError.passwordError}
               </Form.Text>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './InputText.css';
+import Form from "react-bootstrap/Form";
 
 export const InputText = ({
     type,
@@ -10,14 +11,14 @@ export const InputText = ({
 }) => {
   return (
     <>
-        <input
+          <Form.Control
             className='inputDesign'
             type={type}
             name={name}
             placeholder={placeholder}
             onChange={changeFunction}
             onBlur={validateFunction}
-        />
+              />
     </>
   )
 }
